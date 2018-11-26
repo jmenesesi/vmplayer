@@ -25,7 +25,23 @@
     "strictInjectionParameters": true,
     "enableResourceInlining": true
   },
-  "exclude": [
+  "files": [
+    "index.ts"
+  ],
+  "keywords": [
+    "angular",
+    "angular6",
+    "VimeoPlayer",
+    "Vimeo",
+    "Player",
+  ],
+  "author": "Juan Manuel Meneses",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ion-book/demo119"
+  },
+  "exclude": [ 
     "src/test.ts",
     "**/*.spec.ts"
   ]

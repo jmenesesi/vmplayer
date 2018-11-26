@@ -2,7 +2,7 @@
  * Public API Surface of vmplayer
  */
 
-export * from './lib/vmplayer.service';
-export * from './lib/vmplayer.component';
-export * from './lib/vmplayer.module';
-export * from './lib/models/embed-options.model';
+export {VmplayerService} from './lib/vmplayer.service';
+export {VmplayerComponent} from './lib/vmplayer.component';
+export {VmplayerModule} from './lib/vmplayer.module';
+export {EmbedOptions} from './lib/models/embed-options.model';
