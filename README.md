@@ -7,6 +7,8 @@
 En el app.module.ts agregar para cargar el script de Vimeo:
 
 ```
+import {VmplayerService, VmplayerModule} from 'vmplayer';
+
 export function loadScript(
   service: VmplayerService) {
   return () =>
