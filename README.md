@@ -1,14 +1,15 @@
 # vmplayer
-Modulo de Angular para incrustar videos de vimeo
 
-Para instalarse ejecutar:
-npm i vmplayer
+###### Para instalarse ejecutar:
+```npm i vmplayer```
 
+###### Configuración
 En el app.module.ts agregar para cargar el script de Vimeo:
 
+```
 export function loadScript(
   service: VmplayerService) {
-  return () => 
+  return () =>
     service.loadScript();
 }
 
@@ -27,16 +28,23 @@ providers: [
     multi: true
   }
 ]
+```
 
 o en su caso agregar al index.html el siguiente script:
 
+```
 <script src="https://player.vimeo.com/api/player.js"></script>
-
-
+```
+###### Usar el componente
 Para usar el componente es de la siguiente manera:
 
-<vp-vmplayer [embedOptions]="{url:'https://vimeo.com/76979871', autoplay:false, width: 640}" (onEvent)="onEvent($event)" [currentTime]="0" (onPause)="onVideoPaused($event)"></vp-vmplayer>
-
+```
+<vp-vmplayer [embedOptions]="{url:'https://vimeo.com/76979871', autoplay:false, width: 640}" 
+  (onEvent)="onEvent($event)" 
+  [currentTime]="0" 
+  (onPause)="onVideoPaused($event)">
+</vp-vmplayer>
+```
 
   
   
